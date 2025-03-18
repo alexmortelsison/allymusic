@@ -27,7 +27,7 @@ const navLinks2 = [
 export default function Navbar() {
   const pathName = usePathname();
   return (
-    <div className="bg-black/60">
+    <div>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-center items-center">
           <div className="space-x-4">

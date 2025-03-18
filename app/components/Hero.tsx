@@ -1,6 +1,7 @@
 import Image from "next/image";
 import EmailSubscibe from "./EmailSubscibe";
 import Socials from "./Socials";
+import Footer from "./Footer";
 
 export default function Hero() {
   return (
@@ -13,9 +14,9 @@ export default function Hero() {
           className="object-cover -z-50 brightness-40"
         />
       </div>
-      <p className="text-white text-5xl md:text-6xl max-w-7xl mx-auto lg:text-8xl px-24 font-extrabold mt-16 md:mt-24 lg:mt-28 justify-center items-center text-center w-full">
+      <p className="text-white text-5xl md:text-7xl max-w-7xl mx-auto lg:text-8xl px-8 font-extrabold mt-8 md:mt-44 xl:mt-36 justify-center items-center text-center w-full">
         Local Vibes, Global Waves - Heard{" "}
-        <span className="text-[#dd0d66] text-glow tracking-wider">
+        <span className="text-[#dd0d66] text-glow tracking-wider text-center flex items-center justify-center">
           Everywhere.
         </span>
       </p>
@@ -27,6 +28,9 @@ export default function Hero() {
         <EmailSubscibe />
       </div>
       <Socials />
+      <div className="mt-8">
+        <Footer />
+      </div>
     </div>
   );
 }

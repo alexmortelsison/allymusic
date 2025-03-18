@@ -1,6 +1,7 @@
 import Card from "../components/Card";
 import Image from "next/image";
 import Card2 from "../components/Card2";
+import Footer from "../components/Footer";
 export default function UpcomingPage() {
   return (
     <div>
