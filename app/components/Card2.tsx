@@ -4,25 +4,24 @@ interface CardProps {
   title: string;
   name: string;
   image: string;
-  description: string;
 }
 
-export default function Card2({ title, name, image, description }: CardProps) {
+export default function Card2({ title, name, image }: CardProps) {
   return (
-    <div className="relative h-[600px] rounded-2xl bg-black/50 hover:bg-black/0">
+    <div className="relative h-[300px] rounded-2xl  shadow-xl shadow-[#216ca1]">
       <Image
         src={image}
         alt="."
-        fill
-        className="object-cover -z-50 rounded-2xl brightness-90"
+        width={500}
+        height={500}
+        className="object-cover -z-50 rounded-2xl h-[400px]"
       />
-      <p className="text-white pl-4 pt-4 text-sm">{title}</p>
-      <p className="text-white pl-4 text-2xl md:text-3xl lg:text-6xl lg:mt-8 font-bold">
-        {name}
-      </p>
-      <p className="text-white pl-4 text-sm font-bold bottom-0 absolute pb-8 font-sans text-start leading-none md:w-[50%]">
-        {description}
-      </p>
+      <div className="absolute top-80 lg:top-70">
+        <p className="pl-4 pt-4 text-sm text-[#dd0d66]">{title}</p>
+        <p className="text-white pl-4 text-3xl md:text-3xl lg:text-6xl font-bold">
+          {name}
+        </p>
+      </div>
     </div>
   );
 }

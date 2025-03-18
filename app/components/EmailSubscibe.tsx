@@ -6,7 +6,7 @@ export default function EmailSubscibe() {
       <Input
         type="email"
         placeholder="Email"
-        className="border-none placeholder:text-lg pl-4 text-white active:border-none placeholder:text-sm z-10"
+        className="border-none pl-4 text-white active:border-none placeholder:text-sm z-10"
       />
       <p className="bg-white h-full py-2 px-4 rounded-r-2xl cursor-pointer ">
         Subscribe

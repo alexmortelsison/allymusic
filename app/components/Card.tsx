@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import CountdownPage from "./CountdownPage";
+import { Info } from "lucide-react";
 
 interface CardProps {
   title: string;
@@ -11,7 +12,7 @@ interface CardProps {
 
 export default function Card({ title, name, image, description }: CardProps) {
   return (
-    <div className="relative h-[500px] lg:h-[500px] rounded-2xl bg-black/50 hover:bg-black/0 w-full">
+    <div className="relative h-[500px] lg:h-[500px] rounded-2xl  w-full hover:scale-105 duration-300 shadow-md  md:shadow-lg shadow-[#dd0d66]">
       <Image
         src={image}
         alt="."
@@ -22,11 +23,11 @@ export default function Card({ title, name, image, description }: CardProps) {
       <p className="text-white pl-4 md:pl-8 text-2xl md:text-3xl lg:text-6xl lg:pt-4 font-bold">
         {name}
       </p>
-      <p className="text-white  pl-4 md:pl-8 text-sm font-bold bottom-0 absolute pb-24 font-sans text-start leading-none md:w-[50%]">
+      <p className="text-gray-300 pl-4 md:pl-8 text-sm bottom-0 absolute pb-24 font-sans text-start md:w-[50%]">
         {description}
       </p>
       <Button className="text-white text-sm font-bold bottom-8 left-5 md:left-6 absolute font-sans cursor-pointer">
-        More info
+        <Info />
       </Button>
       <div className="text-white text-sm font-bold -bottom-0 md:-right-220 w-full absolute font-sans cursor-pointer hidden lg:inline-flex">
         <CountdownPage />

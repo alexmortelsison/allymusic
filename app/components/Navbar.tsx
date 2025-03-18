@@ -27,46 +27,48 @@ const navLinks2 = [
 export default function Navbar() {
   const pathName = usePathname();
   return (
-    <div className="max-w-7xl mx-auto px-4">
-      <div className="flex justify-center items-center">
-        <div className="space-x-4">
-          {navLinks1.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`${
-                pathName === item.href
-                  ? "underline underline-offset-4 text-[#dd0d66] font-bold"
-                  : "text-muted-foreground cursor-pointer"
-              }`}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
-        <Link href={"/"}>
-          <Image
-            src={"/logo.png"}
-            alt="logo"
-            width={300}
-            height={300}
-            className="object-cover w-40 h-40"
-          />
-        </Link>
-        <div className="space-x-4">
-          {navLinks2.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`${
-                pathName === item.href
-                  ? "underline underline-offset-4 text-[#dd0d66] font-bold"
-                  : "text-muted-foreground cursor-pointer"
-              }`}
-            >
-              {item.name}
-            </Link>
-          ))}
+    <div className="bg-black/60">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex justify-center items-center">
+          <div className="space-x-4">
+            {navLinks1.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`${
+                  pathName === item.href
+                    ? "underline underline-offset-4 text-[#dd0d66] font-bold"
+                    : "text-muted-foreground cursor-pointer hover:underline underline-offset-4"
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+          <Link href={"/"}>
+            <Image
+              src={"/logo.png"}
+              alt="logo"
+              width={300}
+              height={300}
+              className="object-cover w-40 h-40"
+            />
+          </Link>
+          <div className="space-x-4">
+            {navLinks2.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`${
+                  pathName === item.href
+                    ? "underline underline-offset-4 text-[#dd0d66] font-bold"
+                    : "text-muted-foreground cursor-pointer hover:underline underline-offset-4"
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>
