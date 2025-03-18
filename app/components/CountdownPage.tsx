@@ -36,10 +36,10 @@ const CountdownTimer = ({ targetDate }: { targetDate: string }) => {
       {Object.entries(timeLeft).map(([unit, value]) => (
         <div
           key={unit}
-          className="flex flex-col justify-center items-center px-8 bg-black/40 text-white p-4 rounded-lg w-16 border border-[#dd0d66] text-sm"
+          className="flex flex-col justify-center items-center px-8 bg-black/40 text-white p-2 rounded-lg w-24 border border-[#dd0d66] text-sm"
         >
-          <span className="text-[15px] font-bold text-[#dd0d66]">{value}</span>
-          <span className="text-[10px]">{unit}</span>
+          <span className="text-[25px] font-bold text-[#dd0d66]">{value}</span>
+          <span className="text-[25px]">{unit}</span>
         </div>
       ))}
     </div>

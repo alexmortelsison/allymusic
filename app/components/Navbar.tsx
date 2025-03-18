@@ -38,7 +38,7 @@ export default function Navbar() {
                 className={`${
                   pathName === item.href
                     ? "underline underline-offset-4 text-[#dd0d66] font-bold"
-                    : "text-muted-foreground cursor-pointer hover:underline underline-offset-4"
+                    : "text-gray-200 cursor-pointer hover:underline underline-offset-4"
                 }`}
               >
                 {item.name}
@@ -62,7 +62,7 @@ export default function Navbar() {
                 className={`${
                   pathName === item.href
                     ? "underline underline-offset-4 text-[#dd0d66] font-bold"
-                    : "text-muted-foreground cursor-pointer hover:underline underline-offset-4"
+                    : "text-gray-200 cursor-pointer hover:underline underline-offset-4"
                 }`}
               >
                 {item.name}
